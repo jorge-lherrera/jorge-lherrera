@@ -1,43 +1,47 @@
-# Hey there! I'm Jorge Herrera 👋
+# Jorge Herrera
 
-## About Me
+Backend developer working with **Java and Spring Boot** on a production agricultural traceability platform: layered architecture, domain services, JPA/Hibernate over Oracle, REST APIs serving web and mobile clients.
 
-Software developer focused on **Backend Enterprise** development, working with **Java** and enterprise ecosystem technologies. Currently based in Santa Catarina, Brazil, on the path to becoming a senior developer.
+Before writing software I spent more than a decade in IT infrastructure, networks and servers, in Cuba and Brazil. That background is why I tend to ask what a system does at 3am, not just whether the tests are green.
 
-I'm passionate about building scalable, secure, and high-performance systems, always applying industry best practices.
-
-## 🛠️ Tech Stack
-
-**Backend:**
-`Java` `Spring Boot` `REST APIs` `SQL` `Oracle DB` `PostgreSQL` `Maven`
-
-**Frontend:**
-`HTML5` `CSS3` `JavaScript` `React`
-
-**Tools & DevOps:**
-`Git` `GitHub` `VS Code` `Docker` `CI/CD`
-
-## 📂 Featured Projects
-
-| Project | Description | Technologies |
-|---------|-------------|--------------|
-| [The-Wild-Oasis](https://github.com/jorge-lherrera/The-Wild-Oasis) | Full-stack management application | JavaScript, React |
-| [Cabins-in-the-Woods-Front](https://github.com/jorge-lherrera/Cabins-in-the-Woods-Front) | Booking system frontend | JavaScript |
-| [Cabins-in-the-Woods-Back](https://github.com/jorge-lherrera/Cabins-in-the-Woods-Back) | Booking system backend API | JavaScript |
-| [FMT_Viagem365_Api](https://github.com/jorge-lherrera/FMT_Viagem365_Api) | Travel management API | JavaScript |
-| [FMT_Viagem365_Front](https://github.com/jorge-lherrera/FMT_Viagem365_Front) | Travel management frontend | JavaScript |
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jorge-lherrera&show_icons=true&theme=github_dark&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jorge-lherrera&layout=compact&theme=github_dark&hide_border=true)
-
-## 📫 Get in Touch
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jorge-lherrera)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jorge-lherrera)
+Based in Florianopolis, Brazil.
 
 ---
 
-*"Continuous learning is the path to excellence."*
+### Current focus
+
+Clean architecture and domain modeling, database performance and query behaviour under load, and making tests prove something rather than merely pass.
+
+---
+
+### Projects
+
+**[inconclusive](https://github.com/jorge-lherrera/inconclusive)** — TypeScript, Playwright, bash
+
+A browser test that passes proves the DOM exists today. It does not prove your fix did anything. `inconclusive` runs the same spec against two live instances, the fix and the commit before it, and refuses to say *verified* unless the spec fails without the fix. Three outcomes instead of two, each with its own exit code, so a machine can insist on the difference between "my fix does not work" and "my test proves nothing".
+
+**AgTrace core API** — Java, Spring Boot, Oracle (private)
+
+Production traceability platform. REST endpoints over a layered architecture of use cases, domain services, entities, mappers and JPA repositories. Dashboards with sharing between users, PDF report generation and data export.
+
+---
+
+### Stack
+
+**Backend** Java, Spring Boot, JPA/Hibernate, REST APIs, Maven
+
+**Data** Oracle, PostgreSQL, SQL, query performance
+
+**Practices** Clean Architecture, DDD, Hexagonal Architecture, JUnit, Testcontainers
+
+**Frontend** TypeScript, React
+
+**Tooling** Git, Docker, Playwright, bash
+
+---
+
+### Writing
+
+I publish short technical posts on backend engineering, mostly about the gap between what a system appears to do and what it actually does. Recent ones: the N+1 query problem and why `@BatchSize` can make it worse, and why a plain `UNIQUE` index breaks on tables that use soft delete.
+
+[LinkedIn](https://www.linkedin.com/in/jorge-lherrera)
