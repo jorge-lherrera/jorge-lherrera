@@ -1,22 +1,18 @@
 # Jorge Herrera
 
-Backend developer on a production agricultural traceability platform, working with **Spring Boot** and Oracle. I work on REST endpoints, domain services and JPA repositories as part of the engineering team.
-
----
-
-### Current focus
-
-Clean architecture, domain modeling and database performance.
+Backend developer on a production agricultural traceability platform, working with **Spring Boot** and Oracle.
 
 ---
 
 ### Projects
 
-**AgTrace core API** — Spring Boot, JPA/Hibernate, Oracle · private, team project
+**[MedClinic API](https://github.com/jorge-lherrera/SCTEC-MINI-PROJECT-MODULE-2)** — NestJS, TypeORM, PostgreSQL
 
-Production traceability platform maintained by the engineering team. I work across REST endpoints, dashboards, PDF report generation and data export.
+The access layer of a clinic management backend: user registration with hashed passwords, JWT authentication, token validation middleware, role-based authorization, and centralized error handling with standardized JSON responses.
 
-**[inconclusive](https://github.com/jorge-lherrera/inconclusive)** — TypeScript, bash · personal project
+The domain features are deliberately out of scope for this stage. The layered architecture is built so they can be added without restructuring it.
+
+**[inconclusive](https://github.com/jorge-lherrera/inconclusive)** — TypeScript, bash
 
 A test that passes proves the DOM exists today. It does not prove your fix did anything. This runs the same spec against two live instances, the fix and the commit before it, and refuses to call it *verified* unless the spec fails without the fix.
 
@@ -26,9 +22,9 @@ Three outcomes instead of two, each with its own exit code, so a machine can ins
 
 ### Stack
 
-**Backend** Spring Boot, JPA/Hibernate, REST APIs, Maven
+**Backend** Spring Boot, JPA/Hibernate, REST APIs, NestJS
 
-**Data** Oracle, PostgreSQL, SQL
+**Data** Oracle, PostgreSQL, SQL, TypeORM
 
 **Practices** Clean Architecture, DDD, Hexagonal Architecture, JUnit, Testcontainers
 
