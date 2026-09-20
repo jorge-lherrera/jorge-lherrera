@@ -1,6 +1,6 @@
 # Jorge Herrera
 
-Backend developer on a production agricultural traceability platform, working with **Spring Boot** and Oracle.
+Backend developer on a production agricultural traceability platform, building the API behind its web and mobile applications.
 
 ---
 
@@ -23,9 +23,9 @@ Three outcomes instead of two, each with its own exit code, so a machine can ins
 
 ### Stack
 
-**Backend** Java, Spring Boot, JPA/Hibernate, REST APIs, NestJS
+**Backend** Java, Spring Boot, JPA/Hibernate, REST APIs
 
-**Data** Oracle, PostgreSQL, SQL, Flyway, TypeORM
+**Data** Oracle, PostgreSQL, SQL, Flyway
 
 **Practices** Clean Architecture, DDD, Hexagonal Architecture, Spring Modulith, ArchUnit, JUnit, Testcontainers
 
