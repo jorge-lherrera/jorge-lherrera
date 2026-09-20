@@ -6,27 +6,31 @@ Backend developer on a production agricultural traceability platform, working wi
 
 ### Projects
 
-**[MedClinic API](https://github.com/jorge-lherrera/SCTEC-MINI-PROJECT-MODULE-2)** — NestJS, TypeORM, PostgreSQL
+**[ColdChain](https://github.com/jorge-lherrera/coldchain-api)** — Java 25, Spring Boot 4, Oracle 23ai
 
-The access layer of a clinic management backend: user registration with hashed passwords, JWT authentication, token validation middleware, role-based authorization, and centralized error handling with standardized JSON responses.
+Cold chain custody and compliance API. A pharmaceutical shipment passes from hand to hand between organizations, its temperature is measured for the entire journey, and when it closes it either has a certificate or it doesn't.
 
-The domain features are deliberately out of scope for this stage. The layered architecture is built so they can be added without restructuring it.
+Five modules that talk through domain events, hexagonal inside: a pure-Java domain model, a repository port it declares, and a JPA adapter behind it. Module boundaries are declared in code, and an import that crosses one fails the build. Every rule in the catalogue has a machine that checks it, and the walkthrough in the README runs in CI against an Oracle raised from nothing — it fails if the verdict is not the one written down.
 
 **[inconclusive](https://github.com/jorge-lherrera/inconclusive)** — TypeScript, bash
 
-A test that passes proves the DOM exists today. It does not prove your fix did anything. This runs the same spec against two live instances, the fix and the commit before it, and refuses to call it *verified* unless the spec fails without the fix.
+A test that passes proves the DOM exists today. It does not prove your fix did anything. This runs the same spec against two live instances, the fix and the commit before it, and refuses to call it verified unless the spec fails without the fix.
 
 Three outcomes instead of two, each with its own exit code, so a machine can insist on the difference between "my fix does not work" and "my test proves nothing".
+
+**[MedClinic API](https://github.com/jorge-lherrera/SCTEC-MINI-PROJECT-MODULE-2)** — NestJS, TypeORM, PostgreSQL
+
+The access layer of a clinic management backend: user registration with hashed passwords, JWT authentication, token validation middleware, role-based authorization, and centralized error handling with standardized JSON responses.
 
 ---
 
 ### Stack
 
-**Backend** Spring Boot, JPA/Hibernate, REST APIs, NestJS
+**Backend** Java, Spring Boot, JPA/Hibernate, REST APIs, NestJS
 
-**Data** Oracle, PostgreSQL, SQL, TypeORM
+**Data** Oracle, PostgreSQL, SQL, Flyway, TypeORM
 
-**Practices** Clean Architecture, DDD, Hexagonal Architecture, JUnit, Testcontainers
+**Practices** Clean Architecture, DDD, Hexagonal Architecture, Spring Modulith, ArchUnit, JUnit, Testcontainers
 
 **Also** TypeScript, React, Git, Docker
 
